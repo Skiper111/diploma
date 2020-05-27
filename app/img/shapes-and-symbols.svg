@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 502 502" style="enable-background:new 0 0 502 502;" xml:space="preserve" width="512px" height="512px" class="hovered-paths"><g><g>
+	<g>
+		<rect x="10" y="10" style="fill:#E2FFE2" width="482" height="482" data-original="#CCCCCC" class="hovered-path active-path" data-old_color="#CCCCCC"/>
+		<path d="M492,502H10c-5.523,0-10-4.477-10-10V10C0,4.477,4.477,0,10,0h482c5.523,0,10,4.477,10,10v482    C502,497.523,497.523,502,492,502z M20,482h462V20H20V482z" data-original="#000000" class="" style="fill:#000000"/>
+	</g>
+	<g>
+		<path d="M288,53h-17c-5.523,0-10-4.477-10-10s4.477-10,10-10h17c5.523,0,10,4.477,10,10S293.523,53,288,53z" data-original="#000000" class="" style="fill:#000000"/>
+	</g>
+	<g>
+		<path d="M228,53H43c-5.523,0-10-4.477-10-10s4.477-10,10-10h185c5.523,0,10,4.477,10,10S233.523,53,228,53z" data-original="#000000" class="" style="fill:#000000"/>
+	</g>
+</g></g> </svg>

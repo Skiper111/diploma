@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lemonada:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fabric.js"></script>
+    <title>Diploma</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="navBar">
+            <div>
+                <div class="controlButtons">
+                    <button class="button toggleable" value="moveMod"><img src="img/layer.svg"/></button>
+                    <button class="button" value="clear"><img src="img/trash.svg"/></button>
+                    <button class="button" value="undo"><img src="img/undo.svg"/></button>
+                    <button class="button" value="redo"><img src="img/redo.svg"/></button>
+                </div>
+                <div class="markerButtons">
+                    <h3>Маркер</h3>
+                    <button class="button selectable selected" value="0"><img src="img/marker.svg"/></button>
+                    <button class="button selectable" value="1"><img src="img/paint-tube.svg"/></button>
+                    <button class="button selectable" value="2"><img src="img/spray.svg"/></button>
+                    <button class="button selectable" value="3"><img src="img/pen.svg"/></button>
+                    <button class="button selectable" value="4"><img src="img/highlighter.svg"/></button>
+                    <button class="button selectable" value="fill"><img src="img/bucket.svg"/></button>
+                    <div class="weight">Толщина:<input id="penWeight" type="text" value="5"></div>
+                    <input type="range" name="range" min="1" max="100" value="5">
+                    <div class="color">Цвет:
+                        <label>
+                            <input type="color" name="color" value="#000000">
+                            <div class="circle"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="figureButtons">
+                    <h3>Фигура</h3>
+                    <button class="button" value="circle"><img src="img/circle.svg"/></button>
+                    <button class="button" value="square"><img src="img/shapes-and-symbols.svg"/></button>
+                    <button class="button" value="triangle"><img src="img/bleach.svg"/></button>
+                    <button class="button" value="line"><img src="img/minus.svg"/></button>
+                </div>
+                <div>
+                    <div class="textButtons">
+                        <h3>Текст</h3>
+                        <div>
+                            <button class="button" value="text"><img src="img/font.svg"/></button>
+                            <button class="button textToggle" value="bold"><img src="img/bold.svg"/></button>
+                            <button class="button textToggle" value="italic"><img src="img/italic.svg"/></button>
+                        </div>
+                        <div class="select">
+                            <img class= 'selectArrow' src="img/arrow.svg"/>
+                            <select id="fontFamily">
+                                <option value="Times New Roman" selected>Times New Roman</option>
+                                <option value="Roboto">Roboto</option>
+                                <option value="Oswald">Oswald</option>
+                                <option value="Playfair Display">Playfair Display</option>
+                                <option value="Cormorant Infant">Cormorant Infant</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <img class= 'selectArrow' src="img/arrow.svg"/>
+                            <select id="textWeight" class="select">
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="16">16</option>
+                                <option value="18">18</option>
+                                <option value="20" selected>20</option>
+                                <option value="22">22</option>
+                                <option value="24">24</option>
+                                <option value="26">26</option>
+                                <option value="28">28</option>
+                                <option value="36">36</option>
+                                <option value="48">48</option>
+                                <option value="72">72</option>
+                                <option value="94">94</option>
+                                <option value="130">130</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadowButtons">
+                <h3>Тень</h3>
+                <div class="weight">Толщина тени <input id="shadowWeight" type="text" value="0"></div>
+                <input type="range" name="shadowWeight" min="0" max="50" value="0">
+                <div class="weight">Смещение тени <input id="shadowOffset" type="text" value="0"></div>
+                <input type="range" name="shadowOffset" min="0" max="50" value="0">
+                <div class="color">Цвет тени:
+                    <label>
+                        <input type="color" name="shadowColor" value="#000000">
+                        <div class="circle"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script type="text/javascript" src="js/myFabric.js"></script>
+</body>
+</html>
